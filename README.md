@@ -112,10 +112,10 @@ Add screenshots of the running frontend and API responses. Place image files in 
 
 ## My AI Usage
 
-I used ChatGPT for the entire project — for generating boilerplate, writing tests, debugging, and iterating on fixes. Every suggestion from the tool was reviewed and adjusted before being committed.
+I used ChatGPT for the entire project — for generating boilerplate, writing tests, debugging, and iterating on fixes.
 
 Tools used:
-- ChatGPT — used to generate and refactor backend code, update schemas, scaffold tests, and help debug test failures.
+- ChatGPT — used to generate and refactor backend, frontend code, update schemas, scaffold tests, and help debug test failures.
 
 How I used AI:
 - Generated initial boilerplate for the `sweets` router and updated the `Sweet` model and Pydantic schemas.
