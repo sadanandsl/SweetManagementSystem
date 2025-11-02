@@ -1,5 +1,7 @@
 # Sweet Shop Management System
 A full-stack Sweet Shop Management System for managing sweets inventory, billing, and user roles (Admin & Billing Staff) — built using FastAPI and React.
+
+# 
 Repository: https://github.com/sadanandsl/SweetManagementSystem
 
 This repository contains a full-stack Sweet Shop Management System built with:
