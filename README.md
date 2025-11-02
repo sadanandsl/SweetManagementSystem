@@ -125,4 +125,8 @@ How I used AI:
 
 Reflection on impact:
 - AI accelerated boilerplate creation and test scaffolding, which saved time during initial development. I treated AI output as a draft: I reviewed, corrected, and adapted every generated change to ensure security and correctness.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-success)
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
