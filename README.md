@@ -96,17 +96,16 @@ The tests will recreate the SQLite DB before running to ensure a fresh test envi
 
 ## Screenshots
 
-Add screenshots of the running frontend and API responses. Place image files in `frontend/src/screenshots/` and they'll appear below. Example files expected:
+Add screenshots of the running frontend and API responses. Place image files in `frontend/src/screenshots/` and they'll appear below.
 
 - `frontend/src/screenshots/admin-dashboard.png`
-- `frontend/src/screenshots/admin-panel.png`
-- `frontend/src/screenshots/billing-panel.png`
-
-
-
 
 ![Admin Dashboard](frontend/src/screenshots/admin-dashboard.png)
+- `frontend/src/screenshots/admin-panel.png`
+
 ![Admin Panel](frontend/src/screenshots/admin-panel.png)
+- `frontend/src/screenshots/billing-panel.png`
+
 ![billing panel](frontend/src/screenshots/billing-panel.png)
 
 
