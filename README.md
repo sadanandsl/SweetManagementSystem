@@ -104,7 +104,6 @@ Add screenshots of the running frontend and API responses. Place image files in 
 
 
 
-Once placed, these images will render here automatically. Example markdown (already wired):
 
 ![Admin Dashboard](frontend/src/screenshots/admin-dashboard.png)
 ![Admin Panel](frontend/src/screenshots/admin-panel.png)
