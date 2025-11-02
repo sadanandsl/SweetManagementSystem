@@ -1,0 +1,18 @@
+@'
+# Python virtual env
+venv/
+# Bytecode
+__pycache__/
+*.pyc
+# SQLite DB (local dev)
+backend/app/sweetshop.db
+# Node modules / build
+frontend/node_modules/
+frontend/build/
+# IDE/editor
+.vscode/
+# logs and env files
+*.log
+.env
+.DS_Store
+'@ | Out-File -Encoding utf8 .gitignore

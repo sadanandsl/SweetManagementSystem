@@ -1,0 +1,671 @@
+/* ============================
+   🌟 GLOBAL STYLES
+============================ */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+/* ============================
+   🌟 NAVBAR
+============================ */
+.navbar {
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #ff8c00;
+}
+
+.navbar button {
+  background-color: #ff8c00;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navbar button:hover {
+  background-color: #e67600;
+}
+
+/* ============================
+   🌟 CONTAINER
+============================ */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ============================
+   🌟 DASHBOARD CARDS
+============================ */
+.sweets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #222;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.card button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff8c00;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.card button:hover {
+  background-color: #e67600;
+}
+
+/* ============================
+   🌟 FORM CONTAINERS
+============================ */
+.form-container {
+  max-width: 400px;
+  background-color: white;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff8c00;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #e67600;
+}
+
+.link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.link a {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+/* ============================
+   🌟 FOOTER
+============================ */
+.footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 13px;
+}
+
+/* ============================
+   🌟 TITLES & HEADERS
+============================ */
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+/* ============================
+   🌟 ADMIN PANEL (Balanced Layout)
+============================ */
+.admin-panel-wrapper {
+  width: 90%;                   /* ⬅ Wider but still centered */
+  max-width: 1900px;            /* Prevents it from being too large */
+  margin: 40px auto;
+  padding: 35px 45px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.admin-panel-wrapper:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-header h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #222;
+}
+
+.admin-header p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Analytics Grid */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.analytics-card {
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.analytics-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-card h3 {
+  font-size: 17px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.analytics-card p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* Table Section */
+.table-section {
+  margin-top: 35px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+.table-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 22px;
+}
+
+/* Admin Table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.admin-table th {
+  background: #f9f9f9;
+  font-weight: 600;
+  color: #444;
+}
+
+.low-stock-row {
+  background-color: #fff4f4;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #b52a38;
+}
+
+/* Add Sweet Section */
+.add-sweet-section {
+  margin-top: 30px;
+  padding: 30px;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.add-sweet-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+
+.admin-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.admin-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.btn-primary {
+  background-color: #ff8c00;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #e67600;
+}
+
+/* ============================
+   🌟 BILLING LAYOUT
+============================ */
+.billing-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sweets-list,
+.bill-preview {
+  width: 48%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sweet-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sweet-item button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.generate-btn {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ============================
+   🌟 RESPONSIVE FIXES
+============================ */
+@media (max-width: 768px) {
+  .admin-panel-wrapper {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .admin-form input {
+    width: 100%;
+  }
+
+  .analytics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .billing-layout {
+    flex-direction: column;
+  }
+
+  .sweets-list,
+  .bill-preview {
+    width: 100%;
+  }
+}
+.admin-dashboard-container {
+  padding: 30px;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+  color: #222;
+}
+
+.dashboard-time {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.report-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.report-btn:hover {
+  background-color: #0056b3;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.analytics-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-card.warning {
+  background-color: #fff8e1;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.chart-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.status-badge.green {
+  background-color: #28a745;
+}
+.status-badge.yellow {
+  background-color: #ffc107;
+  color: #000;
+}
+.status-badge.red {
+  background-color: #dc3545;
+}
+
+/* ================================
+   💳 BILLING DASHBOARD STYLES
+================================ */
+.billing-dashboard {
+  padding: 30px;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+
+.billing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.billing-header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.billing-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.billing-controls input,
+.billing-controls select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.new-bill-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.billing-layout {
+  display: flex;
+  gap: 30px;
+}
+
+.catalog-section {
+  flex: 2;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.sweet-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.sweet-card-item {
+  background: #fff5e6;
+  border: 1px solid #f3c16b;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.sweet-card-item h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.sweet-card-item button {
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.bill-section {
+  flex: 1.2;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.bill-table th,
+.bill-table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.bill-summary {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.bill-summary h3 {
+  margin-bottom: 10px;
+}
+
+.payment-buttons button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.payment-buttons button:nth-child(1) {
+  background-color: #28a745;
+}
+.payment-buttons button:nth-child(2) {
+  background-color: #007bff;
+}
+.payment-buttons button:nth-child(3) {
+  background-color: #6f42c1;
+}
